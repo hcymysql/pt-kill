@@ -18,20 +18,35 @@
 重构版 PT-kill(PHP)从information_schema.PROCESSLIST表中捕获正在运行中的SELECT|ALTER等DML/DDL消耗资源过多的查询，过滤它们，然后杀死它们（可选择不杀）且发邮件/微信报警给DBA和相关开发知悉，避免因慢SQL执行时间过长对数据库造成一定程度的伤害。（注：慢SQL执行完才记录到slow.log里，执行过程中不记录。）
 
 Usage:
+
   Options:
+  
   -u  username
+  
   -p  password
+  
   -h  host ip
+  
   -P  port
+  
   -B  busytime time seconds 设置慢SQL执行时间触发报警
+  
   -I  interval time seconds 设置守护进程下间隔监测时间
+  
   --kill 如果想杀掉慢查询，加上该选项。
+  
   --match-info 匹配杀掉SELECT|INSERT|UPDATE语句
+  
   --match-user 匹配杀掉的用户
+  
   --daemon 1开启后台守护进程，0关闭后台守护进程
+  
   --mail 开启发送邮件报警
+  
   --weixin 开启发送微信报警
+  
   --help  Help
+ 
 
 Example :
    前台运行
