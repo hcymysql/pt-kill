@@ -115,18 +115,30 @@ $status1 = system("/usr/bin/python  wechat.py  'hcymysql' {$row['DB']}库出现�
 移步https://www.cnblogs.com/linuxprobe/p/5717776.html 看此教程配置。
 
 6、会在工具目录下生成kill.txt文件保存慢SQL。
+
 shell> cat kill.txt
+
 2018-11-27 16:41:22
+
 用户名：root
+
 来源IP：localhost
+
 数据库名：hcy
+
 执行时间：18
+
 SQL语句：select sleep(60)
 
+
 7、默认只杀连接中的慢SQL，保留会话连接，如果想把连接也杀掉，去掉QUERY
+
 修改pt-kill.php
+
 //$kill_sql = "KILL QUERY {$row['ID']}"; 
+
 $kill_sql = "KILL {$row['ID']}";
 
 具体演示请看“pt_kill演示录像.avi”
+
 
