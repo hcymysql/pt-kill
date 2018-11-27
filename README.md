@@ -49,13 +49,17 @@ Usage:
  
 
 Example :
+
    前台运行
+   
    shell> php pt-kill.php -u admin -p 123456 -h 10.10.159.31 -P 3306 -B 10  --match-info='select|alter' --match-user='dev' --kill --mail --weixin
 
    后台运行
+   
    shell> php pt-kill.php -u admin -p 123456 -h 10.10.159.31 -P 3306 -B 10  -I 15 --match-info='select|alter' --match-user='dev' --kill --mail --weixin --daemon 1
    	   
    关闭后台运行
+   
    shell> php pt-kill.php --daemon 0
 
 以上是工具的使用方法和参数选项。
