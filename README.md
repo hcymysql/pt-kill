@@ -92,6 +92,7 @@ smtp_config.php
 
 ?>
 
+
 5、--weixin 为开启发送微信报警，需要先安装下simplejson-3.8.2.tar.gz
 shell> tar zxvf simplejson-3.8.2.tar.gz
 shell> cd simplejson-3.8.2
