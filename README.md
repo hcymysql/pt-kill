@@ -72,7 +72,9 @@ Example :
    该选项要和-I 10（秒）配合一起使用，即每休眠10秒监控一次。0为关闭后台守护进程。
 
 4、--mail 为开启发送邮件报警，需先设置smtp_config.php，改成你自己的邮箱账号信息
+
 smtp_config.php
+
 <?php
 
     $content = nl2br(file_get_contents(dirname(__FILE__).'/kill.txt'));
@@ -94,10 +96,15 @@ smtp_config.php
 
 
 5、--weixin 为开启发送微信报警，需要先安装下simplejson-3.8.2.tar.gz
+
 shell> tar zxvf simplejson-3.8.2.tar.gz
+
 shell> cd simplejson-3.8.2
+
 shell> python setup.py build
+
 shell> python setup.py install
+
 
 然后编辑pt-kill.php脚本
 找到
