@@ -76,14 +76,7 @@ Example :
 
 smtp_config.php
 
-<?php
-
-    $content = nl2br(file_get_contents(dirname(__FILE__).'/kill.txt'));
-    require_once "Smtp.class.php";
-
         ******************** 配置信息 ********************************
-    
- --- 
         $smtpserver = "smtp.126.com";//SMTP服务器
         $smtpserverport = 25;//SMTP服务器端口
         $smtpusermail = "chunyang_he@126.com";//SMTP服务器的用户邮箱
@@ -93,12 +86,7 @@ smtp_config.php
         $mailtitle = "警告！出现卡顿慢SQL，请及时优化处理！";//邮件主题
         $mailcontent = "<h1>".$content."</h1>";//邮件内容
         $mailtype = "HTML";//邮件格式（HTML/TXT）,TXT为文本邮件
- ---
- 
         ************************ 配置信息 ****************************
-
-?>
-
 
 5、--weixin 为开启发送微信报警，需要先安装下simplejson-3.8.2.tar.gz
 
