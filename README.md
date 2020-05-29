@@ -100,11 +100,15 @@ shell> python setup.py install
 
 
 然后编辑pt-kill.php脚本
+
 找到
+
 $status1 = system("/usr/bin/python  wechat.py  'hcymysql' {$row['DB']}库出现卡顿慢SQL！ '{$content1}'");
+
 将其'hcymysql'我的微信号换成你自己的即可。
 
 微信企业号设置
+
 移步https://www.cnblogs.com/linuxprobe/p/5717776.html 看此教程配置。
 
 6、会在工具目录下生成kill.txt文件保存慢SQL。
